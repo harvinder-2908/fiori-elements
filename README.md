@@ -1,3 +1,4 @@
 # fiori-elements
 Fiori elements practice
-https://github.com/SAP-samples/fiori-elements-opensap
+Fiori elements opensap -> https://github.com/SAP-samples/fiori-elements-opensap
+RAP generator -> https://github.com/SAP-samples/cloud-abap-rap/tree/abap-environment
