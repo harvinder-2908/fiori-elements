@@ -1,0 +1,34 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Demo App for Travel"
+  },
+  "ui5AppDetails": {
+    "appId": "travel.demo.app"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_7C9D9957E36E5A5E5A661AC8342EA2F7E9C882AD_TM",
+    "semanticObject": "Travel",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_7C9D9957E36E5A5E5A661AC8342EA2F7E9C882AD_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Demo App for Travel"
+      }
+    }
+  ]
+}
