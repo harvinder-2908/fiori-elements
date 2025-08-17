@@ -1,0 +1,55 @@
+@Metadata.layer: #CORE
+@UI.headerInfo: {
+typeNamePlural: 'Travels',
+typeName: 'Travel',
+title: { value: 'Description', type: #STANDARD },
+description: { value: 'TravelID', type: #STANDARD } }
+annotate entity ZC_FE_Travel_001203 with
+{
+
+  @UI.facet: [
+  {
+      label: 'Total Price',
+      targetQualifier: 'TotalPrice',
+      position: 10,
+      type: #DATAPOINT_REFERENCE,
+      purpose: #HEADER
+  },
+  {
+        label: 'Overall Status',
+        position: 20,
+        targetQualifier: 'OverallStatus',
+        type: #DATAPOINT_REFERENCE,    
+        purpose: #HEADER
+  }
+  ]
+
+  @UI.lineItem: [{ position: 10 }]
+  TravelID;
+  @UI.lineItem: [{ position: 20 }]
+  @UI.selectionField: [ { position: 10 } ]
+  AgencyID;
+  @UI.lineItem: [{ position: 30 }]
+  @UI.selectionField: [ { position: 20 } ]
+  CustomerID;
+  @UI.lineItem: [{ position: 40 }]
+  BeginDate;
+  @UI.lineItem: [{ position: 50 }]
+  EndDate;
+  @UI.lineItem: [{ position: 60 }]
+  BookingFee;
+  @UI.lineItem: [{ position: 70 }]
+  @UI.dataPoint: {
+    qualifier: 'TotalPrice'
+  }
+  TotalPrice;
+  @UI.lineItem: [{ position: 80 }]
+  @UI.selectionField: [ { position: 30 } ]
+  @UI.lineItem: [{criticality: 'OverallStatusCriticality'}]
+  @UI.dataPoint: { 
+  qualifier: 'OverallStatus',
+  criticality: 'OverallStatusCriticality' }
+  OverallStatus;
+  @UI.lineItem: [{ position: 90 }]
+  LastChangedAt;
+}
